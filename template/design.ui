@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1217</width>
+    <height>911</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="level">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>60</y>
+      <width>300</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Изменить уровень</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>730</y>
+      <width>300</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Сохранить файл с ходами</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="take_hint">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>140</y>
+      <width>300</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Взять подсказку</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="desk">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>822</width>
+      <height>800</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="condition">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>220</y>
+      <width>300</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Ваш ход</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="steps_table">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>300</y>
+      <width>300</width>
+      <height>411</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1217</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="settings">
+    <property name="title">
+     <string>Настройки</string>
+    </property>
+    <addaction name="chose_level"/>
+    <addaction name="direct"/>
+    <addaction name="correct_name"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Поделиться</string>
+    </property>
+    <addaction name="save_file_1"/>
+    <addaction name="save_photo"/>
+   </widget>
+   <addaction name="settings"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="save_file_1">
+   <property name="text">
+    <string>Файлом</string>
+   </property>
+  </action>
+  <action name="save_photo">
+   <property name="text">
+    <string>Фото</string>
+   </property>
+  </action>
+  <action name="chose_level">
+   <property name="text">
+    <string>Изменить уровень</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>Изменить цвет</string>
+   </property>
+  </action>
+  <action name="direct">
+   <property name="text">
+    <string>Изменить папку сохранения</string>
+   </property>
+  </action>
+  <action name="correct_name">
+   <property name="text">
+    <string>Изменить имя</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>level</tabstop>
+  <tabstop>take_hint</tabstop>
+  <tabstop>save</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
